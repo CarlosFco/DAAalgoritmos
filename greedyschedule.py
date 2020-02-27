@@ -1,4 +1,6 @@
-data = {
+# algoritmo kruskall de el optimo en arbol de recubrimiento de coste minimio
+
+ata = {
     'profit': [50, 10, 15, 30],
     'deadline': [2, 1, 2, 1]
 }
