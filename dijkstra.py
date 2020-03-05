@@ -22,3 +22,4 @@ def dijkstra(origin, destination, graph):
             distances[end] = min(distances[end], distances[start] + weight) # distances[end] es desde el nuevo origen hasta el siguiente
                                                                             # distances[start] + weight es la ditancia desde el nuevo origen hasta el anterior mas el peso de ir hasta el nuevo fin
 
+    return distances[destination]
