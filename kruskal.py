@@ -24,7 +24,7 @@ def kruskal(g):
     for adj in g:
         for start, end, weight in adj:
             if start < end:
-                list_edges.append(weight, start, end) # sort ordena en base al primer elemento de la tupla
+                list_edges.append([weight, start, end]) # sort ordena en base al primer elemento de la tupla
     list_edges.sort()
     i = 0
     while len(list_edges) > i and cont > 1:
@@ -36,4 +36,4 @@ def kruskal(g):
     return mst
 
 
-kruskal(graph)
+print(kruskal(graph))
